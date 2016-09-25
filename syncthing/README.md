@@ -1,4 +1,4 @@
-Mix of tianon/syncthing and gbrks/syncthing
+Mix of [tianon/syncthing](https://hub.docker.com/r/tianon/syncthing/) and [gbrks/syncthing(https://hub.docker.com/r/gbrks/syncthing/)
 
 # Usage
 	$ useradd syncthing
