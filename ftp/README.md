@@ -1,4 +1,5 @@
-Simple vsftpd server
+Simple ftp server based on vsftpd.
+Minimalistic clone of [fauria/vsftpd](https://hub.docker.com/r/fauria/vsftpd/).
 
 # Usage
 	$ docker run -d -v <host folder>:/home/vsftpd \
