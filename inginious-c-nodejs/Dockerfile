@@ -2,6 +2,7 @@
 FROM	ingi/inginious-c-base
 LABEL	org.inginious.grading.name="nodejs"
 
-RUN	curl --silent --location https://rpm.nodesource.com/setup_7.x | bash - && \
-		yum -y install nodejs && \
-		yum clean all
+RUN	set -x && \
+	curl --silent --location https://rpm.nodesource.com/setup_7.x | bash - && \
+	yum -y install nodejs && \
+	yum clean all
