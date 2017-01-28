@@ -6,7 +6,7 @@ RUN	set -x && \
 		yum install -y \
 			autoconf \
 			chrpath \
-		  libunwind \
+			libunwind \
 			freetype-devel \
 			gmp-devel \
 			java-1.8.0-openjdk-devel \
