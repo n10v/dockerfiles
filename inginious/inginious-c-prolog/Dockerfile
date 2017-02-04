@@ -31,12 +31,12 @@ RUN	set -x && \
 			zlib-devel \
 			uuid-devel \
 			libarchive-devel && \
-	yum groupinstall -y "Development Tools" && \
-	yum install -y rpmdevtools && \
-	rpm -ihv --nomd5 https://kojipkgs.fedoraproject.org//packages/pl/7.2.3/3.fc25/src/pl-7.2.3-3.fc25.src.rpm && \
-	cd ~/rpmbuild && \
-	yum install -y java-1.6.0-openjdk-devel && \
-	yum install -y `grep ^BuildRequires SPECS/pl.spec | awk 'NF==2 {print $2}'` && \
-	rpmbuild -ba SPECS/pl.spec && \
-	yum install -y RPMS/x86_64/pl-*.rpm && \
-	yum clean all
+		yum groupinstall -y "Development Tools" && \
+		yum install -y rpmdevtools && \
+		rpm -ihv --nomd5 https://kojipkgs.fedoraproject.org//packages/pl/7.2.3/3.fc25/src/pl-7.2.3-3.fc25.src.rpm && \
+		cd ~/rpmbuild && \
+		yum install -y java-1.6.0-openjdk-devel && \
+		yum install -y `grep ^BuildRequires SPECS/pl.spec | awk 'NF==2 {print $2}'` && \
+		rpmbuild -ba SPECS/pl.spec && \
+		yum install -y RPMS/x86_64/pl-*.rpm && \
+		yum clean all
