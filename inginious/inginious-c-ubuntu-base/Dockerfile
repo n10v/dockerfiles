@@ -3,9 +3,9 @@ FROM ubuntu:latest
 # Install python, needed for scripts used in INGInious
 RUN set -x && \
       apt-get -y update && \
-      apt-get -y install python python3-pip python3 zip unzip openssh-server openssl iproute file && \
+      apt-get -y install python python3-pip python3.5 zip unzip openssh-server openssl iproute file && \
       pip3 install --upgrade pip && \
-      pip3 install msgpack-python pyzmq && \
+      pip3.5 install msgpack-python pyzmq && \
       ln -s /usr/bin/python3 /bin/python3 && \
       apt-get clean
 
