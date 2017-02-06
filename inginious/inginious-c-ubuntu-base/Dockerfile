@@ -17,12 +17,10 @@ RUN chmod -R 755 /INGInious/bin && \
 
 # Install everything needed to allow INGInious' python libs to be loaded
 RUN chmod -R 644 /INGInious/inginious && \
-    mkdir -p /usr/lib/python3.5/site-packages/inginious && \
-    cp -R /INGInious/inginious/*.py  /usr/lib/python3.5/site-packages/inginious && \
-    echo "inginious" > /usr/lib/python3.5/site-packages/inginious.pth
-
-# Delete unneeded folders
-RUN rm -R /INGInious
+    mkdir -p /usr/lib/python3.5/dist-packages/inginious && \
+    cp -R /INGInious/inginious/*.py  /usr/lib/python3.5/dist-packages/inginious && \
+    echo "inginious" > /usr/lib/python3.5/dist-packages/inginious.pth && \
+    rm -R /INGInious
 
 # Create worker user
 RUN groupadd --gid 4242 worker && \
