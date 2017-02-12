@@ -1,3 +1,3 @@
-# Lisp (SBCL) container for INGInious
+# Lisp (SBCL) image for INGInious
 
-A container with latest sbcl
+Container image with latest SBCL

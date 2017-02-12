@@ -1,1 +1,1 @@
-# Prolog (SWI-Prolog) container for INGInious
+# Prolog (SWI-Prolog) image for INGInious

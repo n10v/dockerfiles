@@ -1,6 +1,6 @@
-# Processing container for INGInious
+# Processing image for INGInious
 
-Container with processing language for INGInious.
+Container image with processing language.
 
 ## Example of `run`
 ```bash

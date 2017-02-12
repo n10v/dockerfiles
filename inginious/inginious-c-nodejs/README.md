@@ -1,6 +1,6 @@
-# Node.js container for INGInious
+# Node.js image for INGInious
 
-A container with node.js with latest 7th version
+Container image with node.js latest 7th version
 
 ## Example of `run`
 ```bash
