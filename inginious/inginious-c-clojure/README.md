@@ -1,0 +1,1 @@
+# Clojure image for INGInious
